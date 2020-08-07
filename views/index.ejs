@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>index</title>
+<link rel = "Stylesheet" type="text/css" href = "../assets/css/customstyle.css">
+</head>
+<body>
+    <% if(user != null || user != undefined) { %>
+		<%- include ('partials/signinheader.ejs') %>
+	
+	<% } else { %>
+		<%- include ('partials/header.ejs') %>
+	<% } %>
+<div class="row">
+<section class="stylea2"><span class="sf1">TripA2Z</span><br><span class="sf2">Welcome to TripA2Z  a travel meetup <br><br>The place where you can choose your holiday <br><br>And meet new people on trips</span>
+</section>
+<section class ="s2">
+    <img class = "impos" src="../assets/image/image1.jpg" alt="trip">	
+</section>
+</div>
+<%- include ('partials/footer.ejs') %>
+ </body>
+</html>

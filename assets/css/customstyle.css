@@ -1,0 +1,328 @@
+body{
+	font: 15px Italica;
+	margin:1px;
+
+}
+#navbar{
+position: absolute;
+	top: 0%;
+	right: 0%;
+	padding-top:10px;
+	margin-top: 27px;
+	margin-right:10px;
+    margin-left:20px;
+	background-color: #0066ff;
+}
+
+#navbar ul{
+	padding:0;
+	list-style: none;
+	margin: 0px;
+	
+}
+
+#navbar li{
+	display: inline;
+
+}
+
+#navbar a{
+	color:black;
+	text-decoration:none;
+	font-size: 18px;
+	padding-right:5px;
+}
+#nab{
+position: absolute;
+	padding-top:0px;
+	margin-top: 0px;
+	margin-right:10px;
+    margin-left:20px;
+}
+
+.table{
+
+margin-left:350px;
+ }
+.row{
+	width: 100%;
+	display:flex;
+	flex-wrap:wrap;
+}
+.col2{
+Color:black;
+font-size: 25px;
+list-style-type:none;
+text-decoration:none;
+}
+.button{
+Color:#0066ff;
+font-size: 15px;
+list-style-type:none;
+text-decoration:none;
+}
+
+.titlecol{
+Color:white;
+font-size: 40px;
+list-style-type:none;
+text-decoration:none;
+}
+.secondborder{
+height:-80px;
+}
+.exislist{
+list-style-type:none;
+margin-bottom:50px;
+margin-left: -30px; 
+
+}
+.exislist1{
+float : right;
+color:black;
+list-style-type:none;
+margin-top:-5%;
+}
+.col1{
+Color:white;
+
+}
+.centre{
+    margin-left: auto;
+	float:left;
+	width: 254%;
+	margin-right: auto;
+	padding: 5px;
+
+
+ }
+
+table, th, td ,tr {
+color: #0066ff;
+height : 30px;
+width :800px;
+border-collapse: collapse;
+  border: 1px solid black;
+	margin-top:2%;
+	margin-bottom:5%
+}
+
+.buttona{
+	
+	float: left;
+    margin-top: -10px;
+	margin-left: -20px;
+	background-color: #0066ff;
+	
+}
+.trekimage{
+width:150px;
+height:150px;
+}
+
+body {
+	
+	background-color: white;
+	
+}
+
+hr.new3 {
+  border: solid red;
+  border-radius: 3px;
+  margin-top:0%;
+}
+
+header {
+	 left: 0;
+    width: 100%;
+	background-color: #0066ff;
+	padding-top:10px;
+	height:30%;
+}
+
+.heamain{
+	
+	margin-left: 10px; 
+	margin-top: 10%; 
+	font-size: 40px;
+	opacity:0.9;
+	color : white;
+	font-style:italic;
+}
+
+.impos{
+border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 650px;
+  position: fixed;
+  display:flex;
+	flex-wrap:wrap;
+}
+
+.stylea111 {
+	background-color: white; 
+	height: 250px;
+	padding-left: 30px;
+	padding-top: -100px; 
+	margin-top: 0px;
+	padding-bottom :30px;
+	}
+.stylea {
+background-color: white; 
+height: 200px;
+padding-left: 30px;
+padding-top: 0px; 
+margin-top: 0px;
+padding-bottom :60px;
+margin-bottom: 580px;
+position: relative;
+}
+.stylea2{
+	background-color: white; 
+	height: 250px;
+	padding-left: 80px;
+	padding-top: 50px; 
+	margin-top: 60px;
+	}
+.stylea1 {
+background-color: white; 
+height: 250px;
+padding-left: 80px;
+padding-top: 50px; 
+margin-top: -60px;
+}
+
+footer{
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color:white;
+   background-color: #0066ff;
+ height: 45px;
+ position:fixed;
+}
+
+.fl{
+	float: left;
+}
+.f2{
+	float: left;
+	margin-left: 40px;
+}
+.f3{
+	float: left;
+	margin-left: 45px;
+}
+
+.fr{
+	float: right;
+}
+
+
+.s2{
+	width: 60%; 
+	margin-top: -25%;
+	margin-left: 50%;
+}
+.s3{
+	width: 60%; 
+	margin-top: -16%;
+	margin-left: 55%;
+}
+.sf1{
+	font-size: 65px;
+    margin-top: 20%;
+}
+.sf22{
+	font-size: 10px;
+}
+.sf11{
+	font-size: 35px;
+    margin-top: 30%;
+}
+.sf3{
+	font-size: 65px;
+    margin-top: 30%;
+}
+.sf2{
+	font-size: 25px;
+}
+
+.d1{
+	 float: left;
+	width: 25%;
+    background-color:white;
+    padding: 1px;
+    margin-left: 55%;
+    margin-top: 10px;
+    font-size: 18px;
+ 
+	
+}
+.decision{
+	 float: right;
+	width: 25%;
+    background-color:white;
+    padding: 1px;
+    margin-left: 55%;
+    margin-top: -200px;
+    font-size: 35px;
+ 
+	
+}
+.decision1{
+	float: middle;
+   width: 20%;
+   padding: 1px;
+   margin-left: 350px;
+   margin-top: -400px;
+   font-size: 15px;
+
+   
+}
+.decision2{
+	float: top;
+   width: 1%;
+   padding: 1px;
+   margin-left: 580px;
+ 
+   font-size: 15px;
+
+   
+}
+  input[type=text] {
+
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+  }
+  input[type=submit] {
+
+	background-color: #0066ff;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+	background-color: #0066ff;
+  }
+
+#div {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+  }
+  #div1 {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+	text-align: center;
+	margin-bottom: 20px;
+  }

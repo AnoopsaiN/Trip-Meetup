@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>index</title>
+<link rel = "Stylesheet" type="text/css" href = "../assets/css/customstyle.css">
+</head>
+<body>
+  <% if(user != null || user != undefined) { %>
+		<%- include ('partials/signinheader.ejs') %>
+	
+	<% } else { %>
+		<%- include ('partials/header.ejs') %>
+	<% } %>
+    <section class="stylea111">
+
+      <h1>TripA2Z</h1>
+      <br>
+      <h3>You can contact us via email on tripa2z@gmail.com</h3>
+      <br>
+      <h3>If you want to talk in person you can visit our store in UNCC</h3>
+    </section>
+
+
+    <%- include ('partials/footer.ejs') %>
+ 
+		</body>
+		</html>

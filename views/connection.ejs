@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>index</title>
+<link rel = "Stylesheet" type="text/css" href = "../assets/css/customstyle.css">
+</head>
+<body>
+	<% if(user != null || user != undefined) { %>
+		<%- include ('partials/signinheader.ejs') %>
+	
+	<% } else { %>
+		<%- include ('partials/header.ejs') %>
+	<% } %>
+		<div class="row">
+				<div class="d1"></div>
+	  			
+			</div>
+			/
+			<section class="stylea1"><br><span class="sf1"><%= data[0].Tripname %></span><br>
+  			<img class = "trekimage" src= "<%= data[0].image %>" alt="userpic">
+			 <br><br>
+             Hosted by : <%= data[0].username%><br>
+			 Trip Date : <%= data[0].startdate%><br>
+			 End Date :<%= data[0].endate %><br>
+			 Place :<%= data[0].place %><br>
+			 Start Time :<%= data[0].time %><br>
+             <br>
+			<h2>Details:</h2>
+             <h3><%= data[0].details %></h3>
+				</section>
+				
+
+
+					<div class = "decision">
+<h4>Attending the trip?</h4>
+<form id ="contact" method="POST" action="/savedConnections">
+	<input type="hidden" name="TripId" value="<%= data[0].TripId %>">
+	<input type="submit" name="rsvp" value="Yes">
+	<input type="submit" name="rsvp" value="No">
+	<input type="submit" name="rsvp" value="Maybe">
+</form>
+</div>
+<!-- </form> -->
+			
+						
+
+   				 
+  			
+				
+				
+  
+			
+	
+
+		
+		
+		
+<%- include ('partials/footer.ejs') %>
+ 
+		</body>
+		</html>

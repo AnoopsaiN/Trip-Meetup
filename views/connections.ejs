@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>index</title>
+<link rel = "Stylesheet" type="text/css" href = "../assets/css/customstyle.css">
+</head>
+<body>
+	<% if(user != null || user != undefined) { %>
+		<%- include ('partials/signinheader.ejs') %>
+	
+	<% } else { %>
+		<%- include ('partials/header.ejs') %>
+	<% } %>
+	<div class = "decision2">
+		<% if(errormsg != null || errormsg != undefined) { %>
+	
+		  <table >
+			<tr >
+			  <th>Error Category</th>
+			  <th>Error Description</th>    
+		 </tr>  
+		 <% for(var i=0; i< errormsg.length ; i++) { %>
+			<tr>
+				<td><%= errormsg[i].param %></td>
+				<td><%= errormsg[i].msg %></td>
+				</tr>
+				<% } %>
+		  </table>
+				<% } %>
+	  </div>	
+	
+			<section class="stylea">
+				<% Triptopic.forEach(function(Triptopic) {%>
+					 <span class="sf1"><%= Triptopic%></span>
+					 <br><br>
+													<%
+													for (var i =0 ; i < data.length; i++)
+													{ if(data[i].Triptopic == Triptopic){ %>
+														<span class="sf2">	<a class="col2" href="connection?TripId=<%= data[i].TripId%>"><%= data[i].Tripname %></a></span>
+														<br>
+														<br>
+														<%	}} %>
+				
+				
+						
+										<%	}) %>
+</section>
+
+		
+		<%- include ('partials/footer.ejs') %>
+ 
+		</body>
+		</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>index</title>
+<link rel = "Stylesheet" type="text/css" href = "../assets/css/customstyle.css">
+</head>
+<body>
+    <% if(user != null || user != undefined) { %>
+		<%- include ('partials/signinheader.ejs') %>
+	
+	<% } else { %>
+		<%- include ('partials/header.ejs') %>
+	<% } %>
+    
+    <div id="div" >
+        <form id ="contact" action="/savedConnections/new" method="POST">
+            <label >Trip Type</label>
+            <input type ="text" name="triptype" value="AbroadTrips">
+            <br>
+            <label >Name</label>
+            <input type ="text" name="name" value="Alabama">
+            <br>
+            <label >Details</label>
+            <input type ="text" name="details" value="lets go to alabama">
+            <br>
+            <label >startdate</label>
+            <input type ="text" name="startdate" value="2020-05-12">
+            <br>
+            <label >endate</label>
+            <input type ="text" name="endate" value="2020-05-13">
+            <br>
+            <label >start time</label>
+            <input type ="text" name="time" value="15:00">
+            <br>
+            <input type ="hidden" name="image" value="./../assets/image/image2.jpg">
+            <br>
+
+            <input type="submit" value="Create Trip">
+            </form> 
+
+    </div>
+    <div class = "decision1">
+      <% if(data != null || data != undefined) { %>
+ 
+        <table>
+          <tr >
+            <th>Error Category</th>
+            <th>Error Description</th>    
+       </tr>  
+       <% for(var i=0; i< data.length ; i++) { %>
+          <tr>
+              <td><%= data[i].param %></td>
+              <td><%= data[i].msg %></td>
+              </tr>
+              <% } %>
+        </table>
+              <% } %>
+    </div>
+    <%- include ('partials/footer.ejs') %>
+ 
+		</body>
+		</html>

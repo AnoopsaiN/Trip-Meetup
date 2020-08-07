@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>index</title>
+<link rel = "Stylesheet" type="text/css" href = "../assets/css/customstyle.css">
+</head>
+<body>
+    <%- include ('partials/header.ejs') %>
+    
+    <div id="div1" >
+        <h2>Welcome to TripA2Z</h2>
+        <h3>Please enter your username and password to signin</h3>
+        <% if(data != null) { %>
+            <table class="table">
+                <tr >
+                     <th>Error Category</th>
+                     <th>Description</th>
+                </tr> 
+                <% for(var i=0; i< data.length ; i++) { %>
+                <tr>
+                     <td><%= data[i].param %></td>
+                    <td><%= data[i].msg %></td>
+                 </tr>
+                <% } %>
+            </table>
+         <% } %>
+            
+        <form id ="contact" method="POST" action="/savedConnections/login">
+            <label >User Name</label>
+            <input type ="text" name="username" value="">
+            <br><br>
+            <label >Password</label>
+            <input type ="text" name="password" value="">
+            <br><br>
+            <br>
+            <br>
+            <input type="submit" value="login">
+            </form>
+
+    </div>
+    <%- include ('partials/footer.ejs') %>
+ </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>index</title>
+<link rel = "Stylesheet" type="text/css" href = "../assets/css/customstyle.css">
+</head>
+<body>
+     <% if(user != null || user != undefined) { %>
+		<%- include ('partials/signinheader.ejs') %>
+	
+	<% } else { %>
+		<%- include ('partials/header.ejs') %>
+	<% } %>
+		
+		
+			<table class="table">
+            <tr >
+                 <th>Existing Trip</th>
+                 <th>Category</th>
+                 <th>Going</th>
+                 <th>Edit Response</th>
+                 
+            </tr>  
+            <% for(var i=0; i< data.length ; i++) { %>
+            <tr >
+                 <td><a class="col3"><%= data[i].Connection %></a></td>
+                 <td><%= data[i].triptopic %></td>
+                 <td><%= data[i].rsvp %></td>
+                 <td> 
+                    <form  method="POST" action="/savedConnections">
+                         <input type="hidden" name="TripId" value="<%= data[i].TripId %>">
+                         <input type="submit" name="action" value="Delete">
+                         <input type="submit" value="Update" formaction="/connection?TripId=<%= data[i].TripId %>">
+                    </form> 
+                 </td>   
+            </tr> 
+            <% } %>
+            </table>
+
+		
+		
+		
+            <%- include ('partials/footer.ejs') %>
+		</body>
+		</html>
